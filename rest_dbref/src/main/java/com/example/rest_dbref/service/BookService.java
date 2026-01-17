@@ -45,7 +45,6 @@ public class BookService {
             user.getBooks().removeIf(book -> book.getId().equals(bookId));
             userRepository.save(user);
         });
-
         bookRepository.deleteById(bookId);
     }
 }

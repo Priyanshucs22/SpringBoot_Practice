@@ -15,7 +15,6 @@ public class Book {
     private String id;
 
     @NonNull
-    @Indexed
     private String title;
 
     @NonNull
