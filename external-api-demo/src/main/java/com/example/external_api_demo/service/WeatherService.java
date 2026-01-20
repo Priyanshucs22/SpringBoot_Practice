@@ -15,7 +15,6 @@ public class WeatherService {
     private RestTemplate restTemplate;
 
     public String getWeather(String city) {
-
         String url = "https://api.openweathermap.org/data/2.5/weather?q="
                 + city + "&appid=" + apiKey;
         return restTemplate.getForObject(url, String.class);
